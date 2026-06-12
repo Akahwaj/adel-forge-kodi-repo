@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.adelforgewizard" name="Adel Forge Wizard" version="1.0.0" provider-name="Adel">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Adel Forge TV Build Wizard</summary>
+    <description lang="en_GB">Xenon-style custom build wizard with Fire TV optimization profiles, buffer/cache tuning, maintenance tools, and backup/restore for Sentinel Build 2026.</description>
+    <platform>all</platform>
+    <license>MIT</license>
+    <source>https://github.com/Akahwaj/adel-forge-kodi-repo</source>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>

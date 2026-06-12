@@ -1,0 +1,142 @@
+# Kodi Media Center language file
+# Addon Name: Adel Forge Wizard
+# Addon id: plugin.program.adelforgewizard
+# Addon Provider: Adel
+msgid ""
+msgstr ""
+
+msgctxt "#30000"
+msgid "Build Profiles"
+msgstr ""
+
+msgctxt "#30001"
+msgid "Maintenance Tools"
+msgstr ""
+
+msgctxt "#30002"
+msgid "Buffer & Cache Tuning"
+msgstr ""
+
+msgctxt "#30003"
+msgid "Backup & Restore"
+msgstr ""
+
+msgctxt "#30004"
+msgid "About"
+msgstr ""
+
+msgctxt "#30010"
+msgid "Apply Profile Settings"
+msgstr ""
+
+msgctxt "#30011"
+msgid "View Recommended Add-ons"
+msgstr ""
+
+msgctxt "#30012"
+msgid "Recommended add-ons for %s"
+msgstr ""
+
+msgctxt "#30013"
+msgid "Skin recommendation: %s"
+msgstr ""
+
+msgctxt "#30014"
+msgid "Buffer/cache tuning applied for %s"
+msgstr ""
+
+msgctxt "#30020"
+msgid "Clear General Cache"
+msgstr ""
+
+msgctxt "#30021"
+msgid "Clear Thumbnail Cache"
+msgstr ""
+
+msgctxt "#30022"
+msgid "Clear Add-on Packages"
+msgstr ""
+
+msgctxt "#30023"
+msgid "Reset Buffer/Cache Tuning"
+msgstr ""
+
+msgctxt "#30024"
+msgid "Backup Kodi Userdata"
+msgstr ""
+
+msgctxt "#30025"
+msgid "View Backups"
+msgstr ""
+
+msgctxt "#30030"
+msgid "This will clear cached temporary files. Continue?"
+msgstr ""
+
+msgctxt "#30031"
+msgid "This will clear the Kodi texture and thumbnail cache. Continue?"
+msgstr ""
+
+msgctxt "#30032"
+msgid "This will delete downloaded add-on package files. Continue?"
+msgstr ""
+
+msgctxt "#30033"
+msgid "This will remove the Adel Forge cache tuning from advancedsettings.xml. Continue?"
+msgstr ""
+
+msgctxt "#30040"
+msgid "Cache cleared"
+msgstr ""
+
+msgctxt "#30041"
+msgid "Thumbnail cache cleared"
+msgstr ""
+
+msgctxt "#30042"
+msgid "Add-on packages cleared"
+msgstr ""
+
+msgctxt "#30043"
+msgid "Cache tuning reset to Kodi defaults"
+msgstr ""
+
+msgctxt "#30044"
+msgid "Backup created"
+msgstr ""
+
+msgctxt "#30045"
+msgid "No backups found"
+msgstr ""
+
+msgctxt "#30046"
+msgid "Available Backups"
+msgstr ""
+
+msgctxt "#30047"
+msgid "To restore a backup, close Kodi, extract the backup zip into your userdata folder, then restart Kodi."
+msgstr ""
+
+msgctxt "#30050"
+msgid "Adel Forge Wizard"
+msgstr ""
+
+msgctxt "#30051"
+msgid "Sentinel Build 2026 companion wizard. Select a profile to apply Fire TV buffer/cache tuning and view its recommended add-on set, or use the maintenance tools to keep your build running smoothly."
+msgstr ""
+
+msgctxt "#30052"
+msgid "Last applied profile: %s"
+msgstr ""
+
+msgctxt "#30053"
+msgid "No profile has been applied yet."
+msgstr ""
+
+msgctxt "#30060"
+msgid "General"
+msgstr ""
+
+msgctxt "#30061"
+msgid "Last applied profile"
+msgstr ""

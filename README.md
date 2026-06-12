@@ -26,11 +26,24 @@ Sports-focused edition with live and sports integrations.
 
 ## Install Flow
 1. Install Kodi 21 Omega
-2. Add the Sentinel Build source URL
-3. Install the Sentinel repository ZIP
-4. Open Sentinel Wizard
+2. Add the Sentinel Build source URL: `https://akahwaj.github.io/adel-forge-kodi-repo/`
+3. Go to **Install from zip** and install `repo.adelforgewizard/repo.adelforgewizard-1.0.0.zip`
+   (or install `plugin.program.adelforgewizard/plugin.program.adelforgewizard-1.0.0.zip` directly)
+4. Open **Adel Forge Wizard** from the Programs add-ons
 5. Apply Lite, Premium, Max, Sports, or Safe profile
 6. Configure preferred services and add-ons
+
+## Adel Forge Wizard
+The `plugin.program.adelforgewizard` add-on (in this repo) provides:
+- **Build Profiles** &mdash; Lite, Premium, Max, Sports, and Safe Mode, each applying a
+  tuned `advancedsettings.xml` cache profile and listing its recommended add-on set
+- **Maintenance Tools** &mdash; clear general cache, clear thumbnail cache, clear add-on
+  packages, reset cache tuning
+- **Backup & Restore** &mdash; back up `userdata` to a zip and view available backups
+
+### Building the repository
+Run `python3 tools/build_repo.py` after changing any `addon.xml` to regenerate
+`addons.xml`, `addons.xml.md5`, and the per-addon zip packages.
 
 ## Core Experience
 - FEN Light
