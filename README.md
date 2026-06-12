@@ -38,9 +38,14 @@ The `plugin.program.adelforgewizard` add-on (in this repo) provides:
 - **Build Profiles** &mdash; Lite, Premium, Max, Sports, and Safe Mode, each applying a
   tuned `advancedsettings.xml` cache profile and listing its recommended add-on set
 - **Maintenance Tools** &mdash; clear general cache, clear thumbnail cache, clear add-on
-  packages, reset cache tuning
+  packages, reset cache tuning, repair the add-on database, reset the current skin's
+  settings (fresh start), view a storage report (free space and cache sizes), and run
+  basic network diagnostics
 - **Backup & Restore** &mdash; back up `userdata` to a zip, view available backups, and
   see restore instructions
+- **Device Recommendations** &mdash; an info screen suggesting which build profile and
+  widget settings work best on Fire TV Stick, Fire TV Stick 4K/4K Max, and Shield-style
+  Android TV devices
 - **Legal Streaming Add-ons** &mdash; an info screen pointing to official, legal
   streaming options (Plex, Pluto TV, YouTube, Tubi, PBS Kids, Netflix/Disney+/Prime
   Video apps, and PVR IPTV Simple Client for your own licensed M3U)

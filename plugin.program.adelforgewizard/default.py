@@ -36,6 +36,7 @@ def list_main_menu():
     add_item(_(30000), {"mode": "profiles"})
     add_item(_(30001), {"mode": "maintenance"})
     add_item(_(30003), {"mode": "backup"})
+    add_item(_(30006), {"mode": "device_recommendations"}, is_folder=False, icon="DefaultAddonInfo.png")
     add_item(_(30005), {"mode": "legal_addons"}, is_folder=False, icon="DefaultAddonInfo.png")
     add_item(_(30004), {"mode": "about"}, is_folder=False, icon="DefaultAddonInfo.png")
     xbmcplugin.setContent(HANDLE, "files")
@@ -114,6 +115,10 @@ def list_maintenance():
     add_item(_(30021), {"mode": "clear_thumbnails"}, is_folder=False, icon="DefaultAddonProgram.png")
     add_item(_(30022), {"mode": "clear_packages"}, is_folder=False, icon="DefaultAddonProgram.png")
     add_item(_(30023), {"mode": "reset_cache"}, is_folder=False, icon="DefaultAddonProgram.png")
+    add_item(_(30080), {"mode": "repair_addon_db"}, is_folder=False, icon="DefaultAddonProgram.png")
+    add_item(_(30081), {"mode": "reset_skin"}, is_folder=False, icon="DefaultAddonProgram.png")
+    add_item(_(30082), {"mode": "storage_report"}, is_folder=False, icon="DefaultAddonInfo.png")
+    add_item(_(30083), {"mode": "network_diagnostics"}, is_folder=False, icon="DefaultAddonInfo.png")
     xbmcplugin.endOfDirectory(HANDLE)
 
 
@@ -165,6 +170,21 @@ def show_legal_addons():
     xbmcplugin.endOfDirectory(HANDLE, succeeded=True)
 
 
+def show_device_recommendations():
+    xbmcgui.Dialog().textviewer(_(30006), _(30100))
+    xbmcplugin.endOfDirectory(HANDLE, succeeded=True)
+
+
+def show_storage_report():
+    xbmcgui.Dialog().textviewer(_(30082), maintenance.storage_report())
+    xbmcplugin.endOfDirectory(HANDLE, succeeded=True)
+
+
+def show_network_diagnostics():
+    xbmcgui.Dialog().textviewer(_(30083), maintenance.network_diagnostics())
+    xbmcplugin.endOfDirectory(HANDLE, succeeded=True)
+
+
 def show_about():
     last_profile = ADDON.getSetting("last_profile")
     status = (_(30052) % last_profile) if last_profile else _(30053)
@@ -197,6 +217,16 @@ def router():
         run_maintenance_action(30032, 30042, maintenance.clear_addon_packages)
     elif mode == "reset_cache":
         run_maintenance_action(30033, 30043, maintenance.reset_cache_tuning)
+    elif mode == "repair_addon_db":
+        run_maintenance_action(30084, 30086, maintenance.repair_addon_database)
+    elif mode == "reset_skin":
+        run_maintenance_action(30085, 30087, maintenance.reset_skin_settings)
+    elif mode == "storage_report":
+        show_storage_report()
+    elif mode == "network_diagnostics":
+        show_network_diagnostics()
+    elif mode == "device_recommendations":
+        show_device_recommendations()
     elif mode == "backup":
         list_backup_menu()
     elif mode == "do_backup":

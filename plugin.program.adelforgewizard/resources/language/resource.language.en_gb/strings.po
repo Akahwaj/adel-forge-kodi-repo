@@ -25,6 +25,10 @@ msgctxt "#30005"
 msgid "Legal Streaming Add-ons"
 msgstr ""
 
+msgctxt "#30006"
+msgid "Device Recommendations"
+msgstr ""
+
 msgctxt "#30010"
 msgid "Apply Profile Settings"
 msgstr ""
@@ -93,6 +97,38 @@ msgctxt "#30033"
 msgid "This will remove the Adel Forge cache tuning from advancedsettings.xml. Continue?"
 msgstr ""
 
+msgctxt "#30080"
+msgid "Repair Add-on Database"
+msgstr ""
+
+msgctxt "#30081"
+msgid "Reset Skin Settings (Fresh Start)"
+msgstr ""
+
+msgctxt "#30082"
+msgid "Storage Report"
+msgstr ""
+
+msgctxt "#30083"
+msgid "Network Diagnostics"
+msgstr ""
+
+msgctxt "#30084"
+msgid "This will delete the Kodi add-on database so it can be rebuilt. Continue?"
+msgstr ""
+
+msgctxt "#30085"
+msgid "This will reset the current skin's settings to defaults (Fresh Start). Continue?"
+msgstr ""
+
+msgctxt "#30086"
+msgid "Add-on database reset. Restart Kodi to rebuild it."
+msgstr ""
+
+msgctxt "#30087"
+msgid "Skin settings reset. Restart Kodi to apply."
+msgstr ""
+
 msgctxt "#30040"
 msgid "Cache cleared"
 msgstr ""
@@ -151,4 +187,8 @@ msgstr ""
 
 msgctxt "#30070"
 msgid "Legal and official streaming options for any Sentinel profile:\n\n- Plex - official Kodi add-on (plex.tv); live TV and on-demand, with a free ad-supported tier\n- Pluto TV - free ad-supported live channels and on-demand movies/shows\n- YouTube - official add-on available in the Kodi add-on repository\n- Tubi - free ad-supported movies and TV shows\n- PBS Kids - free children's programming\n- Netflix, Disney+, Prime Video - use the official apps on your Fire TV / Android TV home screen alongside Kodi\n- PVR IPTV Simple Client - connect your own legally licensed IPTV M3U playlist and EPG\n\nInstall these from the official Kodi add-on repository or their respective official sources."
+msgstr ""
+
+msgctxt "#30100"
+msgid "Recommended profile and widget settings by device:\n\n- Fire TV Stick (1st/2nd gen, 1GB RAM): Sentinel Lite profile, limit home screen widgets to 1-2 rows, disable auto-updates during use\n- Fire TV Stick 4K / 4K Max: Sentinel Premium profile, 2-3 widget rows, FENtastic skin recommended\n- Nvidia Shield / high-end Android TV: Sentinel Max profile, full widget layout, Arctic Fuse skin optional\n\nIf a device feels sluggish, drop to the next lower profile, reduce widget rows in skin settings, and use Maintenance > Clear General Cache and Clear Thumbnail Cache regularly."
 msgstr ""
