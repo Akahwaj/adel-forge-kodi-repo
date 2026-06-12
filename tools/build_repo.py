@@ -4,10 +4,17 @@
 import hashlib
 import os
 import re
+import shutil
 import zipfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ADDON_IDS = ["plugin.program.adelforgewizard", "repo.adelforgewizard"]
+
+# Short, root-level copies for simple "Install from zip" URLs.
+QUICK_INSTALL_NAMES = {
+    "plugin.program.adelforgewizard": "wizard.zip",
+    "repo.adelforgewizard": "repo.zip",
+}
 
 EXCLUDE_DIRS = {".git", "__pycache__"}
 
@@ -63,11 +70,24 @@ def build_zip(addon_id):
     return zip_path
 
 
+def build_quick_copy(addon_id, zip_path):
+    quick_name = QUICK_INSTALL_NAMES.get(addon_id)
+    if not quick_name:
+        return None
+    quick_path = os.path.join(ROOT, quick_name)
+    shutil.copyfile(zip_path, quick_path)
+    return quick_path
+
+
 def main():
     digest = write_addons_xml()
     print("addons.xml.md5:", digest)
     for addon_id in ADDON_IDS:
-        print("Built", build_zip(addon_id))
+        zip_path = build_zip(addon_id)
+        print("Built", zip_path)
+        quick_path = build_quick_copy(addon_id, zip_path)
+        if quick_path:
+            print("Built", quick_path)
 
 
 if __name__ == "__main__":
