@@ -16,6 +16,10 @@ BASE_URL = sys.argv[0]
 
 _ = ADDON.getLocalizedString
 
+SENTINEL_SOURCE_URL = "https://akahwaj.github.io/adel-forge-kodi-repo/"
+SENTINEL_REPO_ZIP = "repo.zip"
+SENTINEL_WIZARD_ZIP = "wizard.zip"
+
 
 def build_url(**params):
     return BASE_URL + "?" + urlencode(params)
@@ -36,6 +40,8 @@ def list_main_menu():
     add_item(_(30000), {"mode": "profiles"})
     add_item(_(30001), {"mode": "maintenance"})
     add_item(_(30003), {"mode": "backup"})
+    add_item("Premium Services Manager", {"mode": "premium_services"}, is_folder=False, icon="DefaultAddonInfo.png")
+    add_item("Sentinel Install Guide", {"mode": "install_guide"}, is_folder=False, icon="DefaultAddonInfo.png")
     add_item(_(30005), {"mode": "legal_addons"}, is_folder=False, icon="DefaultAddonInfo.png")
     add_item(_(30004), {"mode": "about"}, is_folder=False, icon="DefaultAddonInfo.png")
     xbmcplugin.setContent(HANDLE, "files")
@@ -160,6 +166,22 @@ def restore_backup():
     xbmcplugin.endOfDirectory(HANDLE, succeeded=True)
 
 
+def show_premium_services():
+    text = """Sentinel Premium Services Manager\n\nRecommended account services for Sentinel Custom Kodi Build:\n\n- Real-Debrid\n- TorBox\n- Premiumize\n- AllDebrid\n- Trakt\n\nBest add-ons for these services:\n\n- FEN Light\n- Umbrella\n- POV\n- Seren\n- FenSkeleton\n\nSetup notes:\n\n1. Install and open your preferred video add-on.\n2. Open the add-on settings.\n3. Go to Accounts / My Services.\n4. Authorize Real-Debrid, TorBox, Premiumize, AllDebrid, and/or Trakt where supported.\n5. Restart Kodi after account authorization.\n6. Rebuild widgets if menus do not update.\n\nSentinel does not store your account credentials. Authorization is handled by each supported add-on or service manager."""
+    xbmcgui.Dialog().textviewer("Premium Services Manager", text)
+    xbmcplugin.endOfDirectory(HANDLE, succeeded=True)
+
+
+def show_install_guide():
+    text = """Sentinel Custom Kodi Build Install Guide\n\nKodi Source URL:\n{source}\n\nRepository ZIP:\n{repo_zip}\n\nWizard ZIP:\n{wizard_zip}\n\nInstall from Kodi File Manager:\n\n1. Open Kodi.\n2. Go to Settings.\n3. Go to File Manager.\n4. Select Add Source.\n5. Enter the source URL above.\n6. Name it Sentinel.\n7. Go back to the Kodi home screen.\n8. Go to Add-ons.\n9. Select Install from zip file.\n10. Choose Sentinel.\n11. Install repo.zip.\n12. Go to Install from repository.\n13. Open the Sentinel / Adel Forge repository.\n14. Go to Program add-ons.\n15. Install the Sentinel Wizard.\n16. Open Sentinel Wizard from Program add-ons.\n17. Select Lite, Premium, Max, Sports, or Safe Mode.\n18. Configure Real-Debrid, TorBox, Premiumize, AllDebrid, and Trakt inside the supported add-ons.\n\nRecommended first profile:\nSentinel Premium\n\nFire TV recommendation:\nUse Sentinel Lite or Sentinel Premium for best performance.\n\nIf Kodi becomes slow:\nUse Sentinel Safe Mode, clear cache, clear thumbnails, and reduce widgets.""".format(
+        source=SENTINEL_SOURCE_URL,
+        repo_zip=SENTINEL_REPO_ZIP,
+        wizard_zip=SENTINEL_WIZARD_ZIP,
+    )
+    xbmcgui.Dialog().textviewer("Sentinel Install Guide", text)
+    xbmcplugin.endOfDirectory(HANDLE, succeeded=True)
+
+
 def show_legal_addons():
     xbmcgui.Dialog().textviewer(_(30005), _(30070))
     xbmcplugin.endOfDirectory(HANDLE, succeeded=True)
@@ -205,6 +227,10 @@ def router():
         view_backups()
     elif mode == "restore_backup":
         restore_backup()
+    elif mode == "premium_services":
+        show_premium_services()
+    elif mode == "install_guide":
+        show_install_guide()
     elif mode == "legal_addons":
         show_legal_addons()
     elif mode == "about":
