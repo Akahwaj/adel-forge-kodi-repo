@@ -21,6 +21,10 @@ msgctxt "#30004"
 msgid "About"
 msgstr ""
 
+msgctxt "#30005"
+msgid "Legal Streaming Add-ons"
+msgstr ""
+
 msgctxt "#30010"
 msgid "Apply Profile Settings"
 msgstr ""
@@ -143,4 +147,8 @@ msgstr ""
 
 msgctxt "#30061"
 msgid "Last applied profile"
+msgstr ""
+
+msgctxt "#30070"
+msgid "Legal and official streaming options for any Sentinel profile:\n\n- Plex - official Kodi add-on (plex.tv); live TV and on-demand, with a free ad-supported tier\n- Pluto TV - free ad-supported live channels and on-demand movies/shows\n- YouTube - official add-on available in the Kodi add-on repository\n- Tubi - free ad-supported movies and TV shows\n- PBS Kids - free children's programming\n- Netflix, Disney+, Prime Video - use the official apps on your Fire TV / Android TV home screen alongside Kodi\n- PVR IPTV Simple Client - connect your own legally licensed IPTV M3U playlist and EPG\n\nInstall these from the official Kodi add-on repository or their respective official sources."
 msgstr ""

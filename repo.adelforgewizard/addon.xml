@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repo.adelforgewizard" name="Adel Forge Repository" version="1.0.0" provider-name="Adel">
+<addon id="repo.adelforgewizard" name="Adel Forge Repository" version="1.0.1" provider-name="Adel">
   <extension point="xbmc.addon.repository" name="Adel Forge Repository">
     <dir>
       <info compressed="false">https://akahwaj.github.io/adel-forge-kodi-repo/addons.xml</info>
@@ -15,6 +15,7 @@
     <source>https://github.com/Akahwaj/adel-forge-kodi-repo</source>
     <assets>
       <icon>icon.png</icon>
+      <fanart>fanart.png</fanart>
     </assets>
   </extension>
 </addon>

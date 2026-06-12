@@ -39,7 +39,11 @@ The `plugin.program.adelforgewizard` add-on (in this repo) provides:
   tuned `advancedsettings.xml` cache profile and listing its recommended add-on set
 - **Maintenance Tools** &mdash; clear general cache, clear thumbnail cache, clear add-on
   packages, reset cache tuning
-- **Backup & Restore** &mdash; back up `userdata` to a zip and view available backups
+- **Backup & Restore** &mdash; back up `userdata` to a zip, view available backups, and
+  see restore instructions
+- **Legal Streaming Add-ons** &mdash; an info screen pointing to official, legal
+  streaming options (Plex, Pluto TV, YouTube, Tubi, PBS Kids, Netflix/Disney+/Prime
+  Video apps, and PVR IPTV Simple Client for your own licensed M3U)
 
 ### Building the repository
 Run `python3 tools/build_repo.py` after changing any `addon.xml` to regenerate

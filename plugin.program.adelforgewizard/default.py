@@ -36,6 +36,7 @@ def list_main_menu():
     add_item(_(30000), {"mode": "profiles"})
     add_item(_(30001), {"mode": "maintenance"})
     add_item(_(30003), {"mode": "backup"})
+    add_item(_(30005), {"mode": "legal_addons"}, is_folder=False, icon="DefaultAddonInfo.png")
     add_item(_(30004), {"mode": "about"}, is_folder=False, icon="DefaultAddonInfo.png")
     xbmcplugin.setContent(HANDLE, "files")
     xbmcplugin.endOfDirectory(HANDLE)
@@ -159,6 +160,11 @@ def restore_backup():
     xbmcplugin.endOfDirectory(HANDLE, succeeded=True)
 
 
+def show_legal_addons():
+    xbmcgui.Dialog().textviewer(_(30005), _(30070))
+    xbmcplugin.endOfDirectory(HANDLE, succeeded=True)
+
+
 def show_about():
     last_profile = ADDON.getSetting("last_profile")
     status = (_(30052) % last_profile) if last_profile else _(30053)
@@ -199,6 +205,8 @@ def router():
         view_backups()
     elif mode == "restore_backup":
         restore_backup()
+    elif mode == "legal_addons":
+        show_legal_addons()
     elif mode == "about":
         show_about()
     else:
