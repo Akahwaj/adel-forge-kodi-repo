@@ -86,7 +86,5 @@ def apply_profile(profile_key):
 
     path = xbmcvfs.translatePath("special://userdata/advancedsettings.xml")
     xml = build_advancedsettings_xml(profile["cache"])
-    handle = xbmcvfs.File(path, "w")
-    handle.write(xml.encode("utf-8"))
-    handle.close()
-    return True
+    with xbmcvfs.File(path, "w") as handle:
+        return bool(handle.write(xml.encode("utf-8")))

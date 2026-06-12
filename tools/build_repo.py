@@ -29,6 +29,8 @@ def read_addon_xml(addon_id):
 
 def get_version(addon_id):
     match = re.search(r'version="([^"]+)"', read_addon_xml(addon_id))
+    if not match:
+        raise ValueError("No version attribute found in {}/addon.xml".format(addon_id))
     return match.group(1)
 
 

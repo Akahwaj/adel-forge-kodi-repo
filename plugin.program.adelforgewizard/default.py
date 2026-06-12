@@ -74,14 +74,21 @@ def apply_profile(profile_key):
         xbmcplugin.endOfDirectory(HANDLE, succeeded=False)
         return
 
-    profiles.apply_profile(profile_key)
-    ADDON.setSetting("last_profile", profile["name"])
-    xbmcgui.Dialog().notification(
-        ADDON.getAddonInfo("name"),
-        _(30014) % profile["name"],
-        xbmcgui.NOTIFICATION_INFO,
-    )
-    xbmcplugin.endOfDirectory(HANDLE, succeeded=False)
+    success = profiles.apply_profile(profile_key)
+    if success:
+        ADDON.setSetting("last_profile", profile["name"])
+        xbmcgui.Dialog().notification(
+            ADDON.getAddonInfo("name"),
+            _(30014) % profile["name"],
+            xbmcgui.NOTIFICATION_INFO,
+        )
+    else:
+        xbmcgui.Dialog().notification(
+            ADDON.getAddonInfo("name"),
+            _(30015) % profile["name"],
+            xbmcgui.NOTIFICATION_ERROR,
+        )
+    xbmcplugin.endOfDirectory(HANDLE, succeeded=success)
 
 
 def show_profile_addons(profile_key):
@@ -98,7 +105,7 @@ def show_profile_addons(profile_key):
         addon_list,
     )
     xbmcgui.Dialog().textviewer(profile["name"], text)
-    xbmcplugin.endOfDirectory(HANDLE, succeeded=False)
+    xbmcplugin.endOfDirectory(HANDLE, succeeded=True)
 
 
 def list_maintenance():
@@ -115,12 +122,13 @@ def run_maintenance_action(confirm_string_id, done_string_id, func):
         xbmcgui.Dialog().notification(
             ADDON.getAddonInfo("name"), _(done_string_id), xbmcgui.NOTIFICATION_INFO
         )
-    xbmcplugin.endOfDirectory(HANDLE, succeeded=False)
+    xbmcplugin.endOfDirectory(HANDLE, succeeded=True)
 
 
 def list_backup_menu():
     add_item(_(30024), {"mode": "do_backup"}, is_folder=False, icon="DefaultAddonProgram.png")
     add_item(_(30025), {"mode": "view_backups"}, is_folder=False, icon="DefaultAddonInfo.png")
+    add_item(_(30026), {"mode": "restore_backup"}, is_folder=False, icon="DefaultAddonInfo.png")
     xbmcplugin.endOfDirectory(HANDLE)
 
 
@@ -130,17 +138,25 @@ def do_backup():
         ADDON.getAddonInfo("name"), _(30044), xbmcgui.NOTIFICATION_INFO
     )
     xbmcgui.Dialog().textviewer(_(30044), archive_path)
-    xbmcplugin.endOfDirectory(HANDLE, succeeded=False)
+    xbmcplugin.endOfDirectory(HANDLE, succeeded=True)
 
 
 def view_backups():
     backups = maintenance.list_backups()
     if backups:
-        text = "\n".join(backups) + "\n\n" + _(30047)
+        text = "\n".join(backups)
     else:
         text = _(30045)
     xbmcgui.Dialog().textviewer(_(30046), text)
-    xbmcplugin.endOfDirectory(HANDLE, succeeded=False)
+    xbmcplugin.endOfDirectory(HANDLE, succeeded=True)
+
+
+def restore_backup():
+    backups = maintenance.list_backups()
+    listing = "\n".join(backups) if backups else _(30045)
+    text = "{}\n\n{}\n\n{}".format(listing, _(30047), maintenance.backup_dir_path())
+    xbmcgui.Dialog().textviewer(_(30026), text)
+    xbmcplugin.endOfDirectory(HANDLE, succeeded=True)
 
 
 def show_about():
@@ -148,7 +164,7 @@ def show_about():
     status = (_(30052) % last_profile) if last_profile else _(30053)
     text = "{}\n\n{}\n\n{}".format(ADDON.getAddonInfo("name"), _(30051), status)
     xbmcgui.Dialog().textviewer(_(30050), text)
-    xbmcplugin.endOfDirectory(HANDLE, succeeded=False)
+    xbmcplugin.endOfDirectory(HANDLE, succeeded=True)
 
 
 def router():
@@ -181,6 +197,8 @@ def router():
         do_backup()
     elif mode == "view_backups":
         view_backups()
+    elif mode == "restore_backup":
+        restore_backup()
     elif mode == "about":
         show_about()
     else:

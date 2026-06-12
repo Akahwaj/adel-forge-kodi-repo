@@ -2,11 +2,17 @@ import os
 import shutil
 import time
 
+BACKUP_DIR = "special://profile/addon_data/plugin.program.adelforgewizard/backups/"
+
 
 def _translate(special_path):
     import xbmcvfs
 
     return xbmcvfs.translatePath(special_path)
+
+
+def backup_dir_path():
+    return _translate(BACKUP_DIR)
 
 
 def clear_general_cache():
@@ -52,7 +58,7 @@ def backup_userdata():
     import xbmcvfs
 
     userdata_dir = _translate("special://userdata/")
-    backup_dir = _translate("special://temp/adelforge_backups/")
+    backup_dir = backup_dir_path()
     if not xbmcvfs.exists(backup_dir):
         xbmcvfs.mkdirs(backup_dir)
 
@@ -65,7 +71,7 @@ def backup_userdata():
 def list_backups():
     import xbmcvfs
 
-    backup_dir = _translate("special://temp/adelforge_backups/")
+    backup_dir = backup_dir_path()
     if not xbmcvfs.exists(backup_dir):
         return []
 
