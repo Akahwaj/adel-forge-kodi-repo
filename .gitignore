@@ -1,2 +1,10 @@
 __pycache__/
 *.pyc
+
+# Block versioned addon zips inside addon folders
+plugin.program.adelforgewizard/*.zip
+repo.adelforgewizard/*.zip
+
+# Keep root-level quick-install zips tracked
+!wizard.zip
+!repo.zip
