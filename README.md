@@ -26,7 +26,7 @@
 ### 2. Install Repository Addon
 - **Add-ons** → **Install from Zip File**
 - Select: `sentinel-build`
-- Find and install: `repository.sentinel.build-1.0.0.zip`
+- Find and install: `sentinel-build-kodi-21.3.zip`
 
 ### 3. Install SENTINEL Wizard
 - **Add-ons** → **Install from Repository**

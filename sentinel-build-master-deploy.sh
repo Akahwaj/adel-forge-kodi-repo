@@ -1176,6 +1176,9 @@ zip -q -r plugin.sentinel.wizard-1.0.0.zip plugin.sentinel.wizard/ -x 'plugin.se
 cp plugin.sentinel.wizard-1.0.0.zip plugin.sentinel.wizard/plugin.sentinel.wizard-1.0.0.zip
 echo "✅ plugin.sentinel.wizard-1.0.0.zip created ($(du -h plugin.sentinel.wizard-1.0.0.zip | cut -f1))"
 
+zip -q -r sentinel-build-kodi-21.3.zip repository.sentinel.build/ plugin.sentinel.wizard/
+echo "✅ sentinel-build-kodi-21.3.zip created ($(du -h sentinel-build-kodi-21.3.zip | cut -f1))"
+
 echo ""
 
 # Step 4: GitHub Actions Workflow
@@ -1284,6 +1287,7 @@ jobs:
           echo "✅ plugin.sentinel.wizard-1.0.0.zip exists"
         fi
         cp plugin.sentinel.wizard-1.0.0.zip plugin.sentinel.wizard/plugin.sentinel.wizard-1.0.0.zip
+        zip -q -r sentinel-build-kodi-21.3.zip repository.sentinel.build/ plugin.sentinel.wizard/
 
   deploy:
     name: Deploy to GitHub Pages

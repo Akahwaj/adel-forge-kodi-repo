@@ -1174,6 +1174,9 @@ zip -r "$REPO_DIR/plugin.sentinel.wizard-1.0.0.zip" "$REPO_DIR/plugin.sentinel.w
 cp "$REPO_DIR/plugin.sentinel.wizard-1.0.0.zip" "$REPO_DIR/plugin.sentinel.wizard/plugin.sentinel.wizard-1.0.0.zip"
 echo "    ✅ plugin.sentinel.wizard-1.0.0.zip"
 
+zip -r "$REPO_DIR/sentinel-build-kodi-21.3.zip" "$REPO_DIR/repository.sentinel.build/" "$REPO_DIR/plugin.sentinel.wizard/" -q
+echo "    ✅ sentinel-build-kodi-21.3.zip"
+
 # ============================================================
 #  9. FINAL SUMMARY
 # ============================================================

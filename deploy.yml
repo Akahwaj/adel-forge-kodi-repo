@@ -125,6 +125,7 @@ jobs:
           echo "✅ plugin.sentinel.wizard-1.0.0.zip exists"
         fi
         cp plugin.sentinel.wizard-1.0.0.zip plugin.sentinel.wizard/plugin.sentinel.wizard-1.0.0.zip
+        zip -r sentinel-build-kodi-21.3.zip repository.sentinel.build/ plugin.sentinel.wizard/
 
     - name: Generate Build Report
       run: |

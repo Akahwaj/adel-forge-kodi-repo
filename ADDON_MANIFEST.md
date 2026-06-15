@@ -4,6 +4,7 @@ This repository currently publishes these installable Kodi packages:
 
 | Add-on ID | Version | Package |
 | --- | --- | --- |
+| SENTINEL all-in-one | Kodi 21.3 | `sentinel-build-kodi-21.3.zip` |
 | `repository.sentinel.build` | `1.0.0` | `repository.sentinel.build-1.0.0.zip` |
 | `plugin.sentinel.wizard` | `1.0.0` | `plugin.sentinel.wizard-1.0.0.zip` |
 
@@ -20,8 +21,8 @@ https://akahwaj.github.io/adel-forge-kodi-repo/
 1. In Kodi, go to **Settings > File Manager > Add Source**.
 2. Add the source URL above and name it `sentinel-build`.
 3. Go to **Add-ons > Install from zip file**.
-4. Open `sentinel-build` and install `repository.sentinel.build-1.0.0.zip`.
-5. Go to **Add-ons > Install from repository > SENTINEL Build Repository > Program add-ons**.
+4. Open `sentinel-build` and install `sentinel-build-kodi-21.3.zip`.
+5. If Kodi only installs the repository package from the all-in-one zip, go to **Add-ons > Install from repository > SENTINEL Build Repository > Program add-ons**.
 6. Install `SENTINEL Wizard`.
 
 ## Published Repository Metadata
@@ -50,4 +51,11 @@ The same package files are also published in Kodi repository layout:
 ```text
 repository.sentinel.build/repository.sentinel.build-1.0.0.zip
 plugin.sentinel.wizard/plugin.sentinel.wizard-1.0.0.zip
+```
+
+The all-in-one package contains both add-on folders:
+
+```text
+repository.sentinel.build/addon.xml
+plugin.sentinel.wizard/addon.xml
 ```
