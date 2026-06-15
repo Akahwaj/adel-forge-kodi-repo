@@ -1,0 +1,34 @@
+name: Validate Kodi Repository
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate XML files
+        run: |
+          python3 - <<'PY'
+          import xml.etree.ElementTree as ET
+          for path in ("addons.xml", "repository.sentinel.build/addon.xml", "plugin.sentinel.wizard/addon.xml"):
+              ET.parse(path)
+              print(f"valid xml: {path}")
+          PY
+
+      - name: Validate checksum
+        run: |
+          expected="$(cut -d' ' -f1 addons.xml.md5)"
+          actual="$(md5sum addons.xml | cut -d' ' -f1)"
+          test "$expected" = "$actual"
+
+      - name: Validate zip layout
+        run: |
+          unzip -l repository.sentinel.build-1.0.0.zip | grep 'repository.sentinel.build/addon.xml'
+          unzip -l plugin.sentinel.wizard-1.0.0.zip | grep 'plugin.sentinel.wizard/addon.xml'
