@@ -12,7 +12,7 @@ This repository currently publishes these installable Kodi packages:
 Use this source URL in Kodi 21.3:
 
 ```text
-https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/
+https://akahwaj.github.io/adel-forge-kodi-repo/
 ```
 
 ## Install Flow

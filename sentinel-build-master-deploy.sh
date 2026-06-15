@@ -84,7 +84,7 @@ Professional streaming setup with Real-Debrid, TorBox, Premiumize, and Trakt int
 ## 🚀 Installation (5 Minutes)
 
 1. **Kodi Settings** → **File Manager** → **Add Source**
-   - URL: `https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/`
+   - URL: `https://akahwaj.github.io/adel-forge-kodi-repo/`
    - Name: `sentinel-build`
 
 2. **Add-ons** → **Install from Zip File**
@@ -549,9 +549,9 @@ cat > addons.xml << 'EOF'
   <addon id="repository.sentinel.build" name="SENTINEL Build Repository" version="1.0.0" provider-name="Akahwaj">
     <extension point="xbmc.addon.repository" name="SENTINEL Repository">
       <dir minversion="21.0">
-        <info compressed="false">https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/</datadir>
+        <info compressed="false">https://akahwaj.github.io/adel-forge-kodi-repo/addons.xml</info>
+        <checksum>https://akahwaj.github.io/adel-forge-kodi-repo/addons.xml.md5</checksum>
+        <datadir zip="true">https://akahwaj.github.io/adel-forge-kodi-repo/</datadir>
       </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
@@ -835,9 +835,9 @@ cat > repository.sentinel.build/addon.xml << 'EOF'
 <addon id="repository.sentinel.build" name="SENTINEL Build Repository" version="1.0.0" provider-name="Akahwaj">
     <extension point="xbmc.addon.repository" name="SENTINEL Repository">
         <dir minversion="21.0">
-            <info compressed="false">https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/</datadir>
+            <info compressed="false">https://akahwaj.github.io/adel-forge-kodi-repo/addons.xml</info>
+            <checksum>https://akahwaj.github.io/adel-forge-kodi-repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://akahwaj.github.io/adel-forge-kodi-repo/</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
@@ -1328,7 +1328,7 @@ jobs:
           ✅ 4 Device Profiles
           
           **Installation:**
-          1. Add Source: https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/
+          1. Add Source: https://akahwaj.github.io/adel-forge-kodi-repo/
           2. Install: repository.sentinel.build-1.0.0.zip
           3. Install: SENTINEL Wizard
           4. Launch and choose profile
@@ -1449,7 +1449,7 @@ https://akahwaj.github.io/adel-forge-kodi-repo/
 
 **Kodi Repository URL:**
 ```
-https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/
+https://akahwaj.github.io/adel-forge-kodi-repo/
 ```
 
 ---
@@ -1527,7 +1527,7 @@ echo "4. Monitor workflow:"
 echo "   https://github.com/Akahwaj/adel-forge-kodi-repo/actions"
 echo ""
 echo "5. Test in Kodi:"
-echo "   Add source: https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/"
+echo "   Add source: https://akahwaj.github.io/adel-forge-kodi-repo/"
 echo ""
 
 echo -e "${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
@@ -1536,7 +1536,7 @@ echo -e "${GREEN}✅ SENTINEL BUILD v1.1.0 - Ready for Deployment!${NC}"
 echo ""
 echo "    Repository: https://github.com/Akahwaj/adel-forge-kodi-repo"
 echo "    GitHub Pages: https://akahwaj.github.io/adel-forge-kodi-repo/"
-echo "    Kodi URL: https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/"
+echo "    Kodi URL: https://akahwaj.github.io/adel-forge-kodi-repo/"
 echo ""
 echo -e "${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""

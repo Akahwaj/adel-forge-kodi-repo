@@ -395,7 +395,7 @@ jobs:
                 <span class="step-number">1</span>
                 <strong>Add Source to Kodi</strong><br>
                 Settings → File Manager → Add Source<br>
-                <code>https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/</code>
+                <code>https://akahwaj.github.io/adel-forge-kodi-repo/</code>
             </div>
             
             <div class="step">
@@ -471,7 +471,7 @@ HTMLEOF
           ✅ 4 Device Profiles
           
           ## Installation
-          1. Add Source: https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/
+          1. Add Source: https://akahwaj.github.io/adel-forge-kodi-repo/
           2. Install: repository.sentinel.build-1.0.0.zip
           3. Install: SENTINEL Wizard
           4. Launch and choose profile

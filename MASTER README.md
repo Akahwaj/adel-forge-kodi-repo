@@ -266,7 +266,7 @@ https://akahwaj.github.io/adel-forge-kodi-repo/
 **Kodi Repository URL (Use this in Kodi):**
 
 ```
-https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/
+https://akahwaj.github.io/adel-forge-kodi-repo/
 ```
 
 **GitHub Actions (Monitor):**
@@ -339,7 +339,7 @@ git push origin main
 
 ```
 Settings → File Manager → Add Source
-https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/
+https://akahwaj.github.io/adel-forge-kodi-repo/
 ```
 
 -----

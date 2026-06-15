@@ -20,7 +20,7 @@
 
 ### 1. Add Repository Source
 - **Settings** → **File Manager** → **Add Source**
-- URL: `https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/`
+- URL: `https://akahwaj.github.io/adel-forge-kodi-repo/`
 - Name: `sentinel-build`
 
 ### 2. Install Repository Addon
@@ -127,7 +127,7 @@ The SENTINEL Wizard includes:
 
 | Purpose | URL |
 |---------|-----|
-| **Repository Source** | `https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/` |
+| **Repository Source** | `https://akahwaj.github.io/adel-forge-kodi-repo/` |
 | **GitHub Repo** | https://github.com/Akahwaj/adel-forge-kodi-repo |
 | **GitHub Pages** | https://akahwaj.github.io/adel-forge-kodi-repo/ |
 | **Releases** | https://github.com/Akahwaj/adel-forge-kodi-repo/releases |

@@ -170,7 +170,7 @@ After deployment, verify everything:
 
 1. **Open Kodi** on Fire Stick, Shield, or Android TV
 1. **Settings** → **File Manager** → **Add Source**
-1. **URL:** `https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/`
+1. **URL:** `https://akahwaj.github.io/adel-forge-kodi-repo/`
 1. **Name:** `sentinel-build`
 1. Click **OK**
 
@@ -297,7 +297,7 @@ https://akahwaj.github.io/adel-forge-kodi-repo/
 **Kodi Repository URL:**
 
 ```
-https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/
+https://akahwaj.github.io/adel-forge-kodi-repo/
 ```
 
 **GitHub Actions:**

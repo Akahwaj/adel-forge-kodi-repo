@@ -58,7 +58,7 @@ git push origin main
 ```
 Settings → File Manager → Add Source
 
-URL: https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/
+URL: https://akahwaj.github.io/adel-forge-kodi-repo/
 
 Name: sentinel-build
 
@@ -96,7 +96,7 @@ https://github.com/Akahwaj/adel-forge-kodi-repo
 Or in Kodi:
 
 ```
-https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/
+https://akahwaj.github.io/adel-forge-kodi-repo/
 ```
 
 -----
