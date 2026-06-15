@@ -16,7 +16,7 @@
 
 ---
 
-## 🚀 Quick Start (Kodi)
+## 🚀 Quick Start (Kodi 21.3)
 
 ### 1. Add Repository Source
 - **Settings** → **File Manager** → **Add Source**

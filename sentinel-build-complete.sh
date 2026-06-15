@@ -1167,9 +1167,11 @@ echo "[*] Creating ZIP files..."
 
 cd ..
 zip -r "$REPO_DIR/repository.sentinel.build-1.0.0.zip" "$REPO_DIR/repository.sentinel.build/" -q
+cp "$REPO_DIR/repository.sentinel.build-1.0.0.zip" "$REPO_DIR/repository.sentinel.build/repository.sentinel.build-1.0.0.zip"
 echo "    ✅ repository.sentinel.build-1.0.0.zip"
 
 zip -r "$REPO_DIR/plugin.sentinel.wizard-1.0.0.zip" "$REPO_DIR/plugin.sentinel.wizard/" -q
+cp "$REPO_DIR/plugin.sentinel.wizard-1.0.0.zip" "$REPO_DIR/plugin.sentinel.wizard/plugin.sentinel.wizard-1.0.0.zip"
 echo "    ✅ plugin.sentinel.wizard-1.0.0.zip"
 
 # ============================================================

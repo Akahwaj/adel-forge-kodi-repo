@@ -1167,11 +1167,13 @@ echo "━━━━━━━━━━━━━━━━━━━━━━━━�
 cd "$REPO_PATH"
 
 # Create repository ZIP
-zip -q -r repository.sentinel.build-1.0.0.zip repository.sentinel.build/
+zip -q -r repository.sentinel.build-1.0.0.zip repository.sentinel.build/ -x 'repository.sentinel.build/*.zip'
+cp repository.sentinel.build-1.0.0.zip repository.sentinel.build/repository.sentinel.build-1.0.0.zip
 echo "✅ repository.sentinel.build-1.0.0.zip created ($(du -h repository.sentinel.build-1.0.0.zip | cut -f1))"
 
 # Create wizard ZIP
-zip -q -r plugin.sentinel.wizard-1.0.0.zip plugin.sentinel.wizard/
+zip -q -r plugin.sentinel.wizard-1.0.0.zip plugin.sentinel.wizard/ -x 'plugin.sentinel.wizard/*.zip'
+cp plugin.sentinel.wizard-1.0.0.zip plugin.sentinel.wizard/plugin.sentinel.wizard-1.0.0.zip
 echo "✅ plugin.sentinel.wizard-1.0.0.zip created ($(du -h plugin.sentinel.wizard-1.0.0.zip | cut -f1))"
 
 echo ""
@@ -1268,18 +1270,20 @@ jobs:
         echo "📦 Creating release artifacts..."
         
         if [ ! -f "repository.sentinel.build-1.0.0.zip" ]; then
-          zip -q -r repository.sentinel.build-1.0.0.zip repository.sentinel.build/
+          zip -q -r repository.sentinel.build-1.0.0.zip repository.sentinel.build/ -x 'repository.sentinel.build/*.zip'
           echo "✅ Created repository.sentinel.build-1.0.0.zip"
         else
           echo "✅ repository.sentinel.build-1.0.0.zip exists"
         fi
+        cp repository.sentinel.build-1.0.0.zip repository.sentinel.build/repository.sentinel.build-1.0.0.zip
         
         if [ ! -f "plugin.sentinel.wizard-1.0.0.zip" ]; then
-          zip -q -r plugin.sentinel.wizard-1.0.0.zip plugin.sentinel.wizard/
+          zip -q -r plugin.sentinel.wizard-1.0.0.zip plugin.sentinel.wizard/ -x 'plugin.sentinel.wizard/*.zip'
           echo "✅ Created plugin.sentinel.wizard-1.0.0.zip"
         else
           echo "✅ plugin.sentinel.wizard-1.0.0.zip exists"
         fi
+        cp plugin.sentinel.wizard-1.0.0.zip plugin.sentinel.wizard/plugin.sentinel.wizard-1.0.0.zip
 
   deploy:
     name: Deploy to GitHub Pages

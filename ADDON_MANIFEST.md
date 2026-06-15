@@ -9,7 +9,7 @@ This repository currently publishes these installable Kodi packages:
 
 ## Kodi Source
 
-Use this source URL in Kodi:
+Use this source URL in Kodi 21.3:
 
 ```text
 https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/
@@ -43,4 +43,11 @@ and the wizard zip must contain:
 
 ```text
 plugin.sentinel.wizard/addon.xml
+```
+
+The same package files are also published in Kodi repository layout:
+
+```text
+repository.sentinel.build/repository.sentinel.build-1.0.0.zip
+plugin.sentinel.wizard/plugin.sentinel.wizard-1.0.0.zip
 ```

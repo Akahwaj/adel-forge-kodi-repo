@@ -111,18 +111,20 @@ jobs:
         
         # Create zips if they don't exist
         if [ ! -f "repository.sentinel.build-1.0.0.zip" ]; then
-          zip -r repository.sentinel.build-1.0.0.zip repository.sentinel.build/
+          zip -r repository.sentinel.build-1.0.0.zip repository.sentinel.build/ -x 'repository.sentinel.build/*.zip'
           echo "✅ Created repository.sentinel.build-1.0.0.zip"
         else
           echo "✅ repository.sentinel.build-1.0.0.zip exists"
         fi
+        cp repository.sentinel.build-1.0.0.zip repository.sentinel.build/repository.sentinel.build-1.0.0.zip
         
         if [ ! -f "plugin.sentinel.wizard-1.0.0.zip" ]; then
-          zip -r plugin.sentinel.wizard-1.0.0.zip plugin.sentinel.wizard/
+          zip -r plugin.sentinel.wizard-1.0.0.zip plugin.sentinel.wizard/ -x 'plugin.sentinel.wizard/*.zip'
           echo "✅ Created plugin.sentinel.wizard-1.0.0.zip"
         else
           echo "✅ plugin.sentinel.wizard-1.0.0.zip exists"
         fi
+        cp plugin.sentinel.wizard-1.0.0.zip plugin.sentinel.wizard/plugin.sentinel.wizard-1.0.0.zip
 
     - name: Generate Build Report
       run: |

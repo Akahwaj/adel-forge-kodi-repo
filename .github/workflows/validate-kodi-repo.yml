@@ -32,3 +32,5 @@ jobs:
         run: |
           unzip -l repository.sentinel.build-1.0.0.zip | grep 'repository.sentinel.build/addon.xml'
           unzip -l plugin.sentinel.wizard-1.0.0.zip | grep 'plugin.sentinel.wizard/addon.xml'
+          test -f repository.sentinel.build/repository.sentinel.build-1.0.0.zip
+          test -f plugin.sentinel.wizard/plugin.sentinel.wizard-1.0.0.zip
