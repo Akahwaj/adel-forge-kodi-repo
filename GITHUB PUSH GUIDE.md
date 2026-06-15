@@ -15,7 +15,7 @@ adel-forge-kodi-repo/
 ├── LICENSE
 ├── README.md (Complete with all services!)
 ├── ADDON_MANIFEST.md
-├── addons.xml (All 18 add-ons)
+├── addons.xml (installable SENTINEL packages)
 ├── addons.xml.md5
 ├── repository.sentinel.build-1.0.0.zip
 ├── plugin.sentinel.wizard-1.0.0.zip
@@ -107,7 +107,7 @@ https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/
 |-----------------------------------|----|---------------------------|
 |README.md                          |6.3K|Installation + all services|
 |ADDON_MANIFEST.md                  |3.7K|Complete documentation     |
-|addons.xml                         |8.3K|All 18 add-ons manifest    |
+|addons.xml                         |8.3K|Installable manifest    |
 |addons.xml.md5                     |45B |Integrity checksum         |
 |plugin.sentinel.wizard-1.0.0.zip   |7.6K|Smart wizard + maintenance |
 |repository.sentinel.build-1.0.0.zip|886B|Repository addon           |
@@ -120,7 +120,7 @@ https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/
 
 - [ ] All files in repo root (not in subfolder)
 - [ ] README.md shows Real-Debrid, TorBox, Premiumize, Trakt
-- [ ] addons.xml has all 18 add-ons
+- [ ] addons.xml lists the installable SENTINEL packages
 - [ ] addons.xml.md5 present
 - [ ] repository.sentinel.build/ folder exists
 - [ ] plugin.sentinel.wizard/ folder exists

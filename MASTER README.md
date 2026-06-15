@@ -51,7 +51,7 @@ This creates EVERYTHING:
 - addons.xml.md5
 - plugin.sentinel.wizard-1.0.0.zip
 - repository.sentinel.build-1.0.0.zip
-- .github/workflows/deploy.yml
+- .github/workflows/validate-kodi-repo.yml
 - Directory structures
 - Complete setup documentation
 
@@ -83,7 +83,7 @@ adel-forge-kodi-repo/
 ├── README.md (6KB - complete)
 ├── ADDON_MANIFEST.md (3KB - detailed)
 ├── SETUP_COMPLETE.md (verification guide)
-├── addons.xml (8KB - all 18 add-ons)
+├── addons.xml (installable SENTINEL packages)
 ├── addons.xml.md5 (checksum)
 ├── plugin.sentinel.wizard-1.0.0.zip (7KB)
 ├── repository.sentinel.build-1.0.0.zip (900B)
@@ -301,7 +301,7 @@ https://github.com/Akahwaj/adel-forge-kodi-repo/releases
 
 ### For GitHub Actions:
 
-1. Copy `deploy.yml` to `.github/workflows/deploy.yml`
+1. Keep `.github/workflows/validate-kodi-repo.yml` in the repository
 1. Push any changes to trigger workflow
 1. Monitor at Actions tab
 1. Releases auto-created

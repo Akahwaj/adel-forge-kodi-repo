@@ -63,7 +63,7 @@ cat > README.md << 'EOF'
 ## 🚀 Installation (5 Minutes)
 
 1. **Kodi Settings** → **File Manager** → **Add Source**
-2. Paste: `https://raw.githubusercontent.com/Akahwaj/sentinel-build/main/`
+2. Paste: `https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/`
 3. Name: `sentinel-build`
 4. **Add-ons** → **Install from Zip File** → `repository.sentinel.build-1.0.0.zip`
 5. **Add-ons** → **Install from Repository** → **SENTINEL** → **SENTINEL Wizard**
@@ -268,9 +268,9 @@ cat > addons.xml << 'EOF'
     <addon id="repository.sentinel.build" name="SENTINEL Build Repository" version="1.0.0" provider-name="Akahwaj">
         <extension point="xbmc.addon.repository" name="SENTINEL Repository">
             <dir minversion="21.0">
-                <info compressed="false">https://raw.githubusercontent.com/Akahwaj/sentinel-build/main/addons.xml</info>
-                <checksum>https://raw.githubusercontent.com/Akahwaj/sentinel-build/main/addons.xml.md5</checksum>
-                <datadir zip="true">https://raw.githubusercontent.com/Akahwaj/sentinel-build/main/</datadir>
+                <info compressed="false">https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/addons.xml</info>
+                <checksum>https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/addons.xml.md5</checksum>
+                <datadir zip="true">https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/</datadir>
             </dir>
         </extension>
         <extension point="xbmc.addon.metadata">
@@ -458,9 +458,9 @@ cat > repository.sentinel.build/addon.xml << 'EOF'
 <addon id="repository.sentinel.build" name="SENTINEL Build Repository" version="1.0.0" provider-name="Akahwaj">
     <extension point="xbmc.addon.repository" name="SENTINEL Repository">
         <dir minversion="21.0">
-            <info compressed="false">https://raw.githubusercontent.com/Akahwaj/sentinel-build/main/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/Akahwaj/sentinel-build/main/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/Akahwaj/sentinel-build/main/</datadir>
+            <info compressed="false">https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
@@ -1142,7 +1142,7 @@ Requirements:
 - Optional: Debrid account, VPN
 
 Support:
-https://github.com/Akahwaj/sentinel-build
+https://github.com/Akahwaj/adel-forge-kodi-repo
 
 License:
 GNU General Public License v3.0
@@ -1199,7 +1199,7 @@ echo ""
 echo "🚀 INSTALLATION (5 MIN):"
 echo ""
 echo "1. Kodi → Settings → File Manager → Add Source"
-echo "   https://raw.githubusercontent.com/Akahwaj/sentinel-build/main/"
+echo "   https://raw.githubusercontent.com/Akahwaj/adel-forge-kodi-repo/main/"
 echo ""
 echo "2. Add-ons → Install from Zip File"
 echo "   → repository.sentinel.build-1.0.0.zip"

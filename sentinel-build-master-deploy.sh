@@ -1167,15 +1167,11 @@ echo "━━━━━━━━━━━━━━━━━━━━━━━━�
 cd "$REPO_PATH"
 
 # Create repository ZIP
-cd repository.sentinel.build
-zip -q -r ../repository.sentinel.build-1.0.0.zip .
-cd ..
+zip -q -r repository.sentinel.build-1.0.0.zip repository.sentinel.build/
 echo "✅ repository.sentinel.build-1.0.0.zip created ($(du -h repository.sentinel.build-1.0.0.zip | cut -f1))"
 
 # Create wizard ZIP
-cd plugin.sentinel.wizard
-zip -q -r ../plugin.sentinel.wizard-1.0.0.zip .
-cd ..
+zip -q -r plugin.sentinel.wizard-1.0.0.zip plugin.sentinel.wizard/
 echo "✅ plugin.sentinel.wizard-1.0.0.zip created ($(du -h plugin.sentinel.wizard-1.0.0.zip | cut -f1))"
 
 echo ""
@@ -1272,18 +1268,14 @@ jobs:
         echo "📦 Creating release artifacts..."
         
         if [ ! -f "repository.sentinel.build-1.0.0.zip" ]; then
-          cd repository.sentinel.build
-          zip -q -r ../repository.sentinel.build-1.0.0.zip .
-          cd ..
+          zip -q -r repository.sentinel.build-1.0.0.zip repository.sentinel.build/
           echo "✅ Created repository.sentinel.build-1.0.0.zip"
         else
           echo "✅ repository.sentinel.build-1.0.0.zip exists"
         fi
         
         if [ ! -f "plugin.sentinel.wizard-1.0.0.zip" ]; then
-          cd plugin.sentinel.wizard
-          zip -q -r ../plugin.sentinel.wizard-1.0.0.zip .
-          cd ..
+          zip -q -r plugin.sentinel.wizard-1.0.0.zip plugin.sentinel.wizard/
           echo "✅ Created plugin.sentinel.wizard-1.0.0.zip"
         else
           echo "✅ plugin.sentinel.wizard-1.0.0.zip exists"
