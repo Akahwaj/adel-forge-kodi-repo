@@ -8,6 +8,9 @@ on:
 permissions:
   contents: write
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   publish-kodi-artifacts:
     runs-on: ubuntu-latest
@@ -37,7 +40,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
           git add repo.zip wizard.zip addons.xml.md5
+
           if git diff --cached --quiet; then
             echo "No Kodi artifact changes to commit."
           else
