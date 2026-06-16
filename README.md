@@ -1,190 +1,192 @@
-# 🎯 SENTINEL BUILD - Kodi Repository
+SENTINEL Build Kodi Repository
 
-**Complete automated Kodi repository setup with 18 premium add-ons**
+Automated Kodi 21.3 repository and wizard deployment powered by GitHub Pages and GitHub Actions.
 
-> Website: https://akahwaj.github.io/adel-forge-kodi-repo/
+Overview
 
----
+This repository hosts the SENTINEL Kodi Build installation packages, repository files, wizard installer, and automated deployment workflows.
 
-## 📦 What's Included
+The project supports:
 
-- **🧙 Smart Installation Wizard** - Choose from 4 profiles (Lite, Premium, Max, Sports)
-- **🎬 18 Premium Add-ons** - Debrid, streaming, and torrent-based options
-- **🔧 Maintenance Center** - Cache management, updates, troubleshooting
-- **💰 Service Setup Guides** - Real-Debrid, TorBox, Premiumize, Trakt
-- **🤖 CI/CD Automation** - GitHub Actions for releases and deployment
+* Kodi 21.3 installs
+* Direct Downloader installation
+* GitHub Pages hosting
+* Automated artifact publishing
+* Auto-generated MD5 manifests
+* Short install URLs
+* Kodi repository deployment automation
 
----
+⸻
 
-## 🚀 Quick Start (Kodi 21.3)
+Direct Install
 
-### 1. Add Repository Source
-- **Settings** → **File Manager** → **Add Source**
-- URL: `https://akahwaj.github.io/adel-forge-kodi-repo/`
-- Name: `sentinel-build`
+Downloader Code
 
-### 2. Install Repository Addon
-- **Add-ons** → **Install from Zip File**
-- Select: `sentinel-build`
-- Find and install: `sentinel-build-kodi-21.3.zip`
+5075635
 
-### 3. Install SENTINEL Wizard
-- **Add-ons** → **Install from Repository**
-- Select: **SENTINEL Build Repository**
-- Go to: **Program Add-ons**
-- Install: **SENTINEL Wizard**
+Short URL
 
-### 4. Launch & Configure
-- **Add-ons** → **Program Add-ons** → **SENTINEL Wizard**
-- Choose installation profile
-- Follow setup wizard
+https://aftv.news/5075635
 
----
+TinyURL
 
-## 🎬 Included Add-ons
+https://tinyurl.com/sentinelkodi
 
-| Category | Add-ons |
-|----------|---------|
-| 🎬 **Debrid Premium** (8) | Umbrella, Seren, SALTS, FEN Light, FenSkeleton, POV, Gears, COSMOS |
-| 🎯 **Free Streaming** (7) | The Crew, Red Light, VIDSRC, Scrubs V2, Gratis Red, Diggz Free99, Chains |
-| 🌪️ **Torrent Based** (3) | Elementum, Jacktook, MediaFusion |
+⸻
 
----
+GitHub Pages Repository
 
-## 💰 Premium Services
+Main Repository URL
 
-Setup guides included in the wizard for:
+https://akahwaj.github.io/adel-forge-kodi-repo/
 
-| Service | Price | Status |
-|---------|-------|--------|
-| **Real-Debrid** | €8/month | ✅ Full Guide |
-| **TorBox** | $7/month | ✅ Full Guide |
-| **Premiumize** | €9.99/month | ✅ Full Guide |
-| **Trakt** | FREE | ✅ Full Guide |
+Repository ZIP
 
----
+https://akahwaj.github.io/adel-forge-kodi-repo/repo.zip
 
-## 📊 Installation Profiles
+Wizard ZIP
 
-### SENTINEL Lite
-- Best for: Fire Stick Lite, Fire Stick 2nd Gen
-- Add-ons: 4 lightweight options
-- Storage: ~500MB
-- Setup time: 2 minutes
+https://akahwaj.github.io/adel-forge-kodi-repo/wizard.zip
 
-### SENTINEL Premium
-- Best for: Fire Stick 4K, Android TV
-- Add-ons: 8 popular options
-- Storage: ~1.5GB
-- Setup time: 3 minutes
+Addons Manifest
 
-### SENTINEL Max
-- Best for: Nvidia Shield, high-end devices
-- Add-ons: All 18 add-ons
-- Storage: ~3GB
-- Setup time: 5 minutes
+https://akahwaj.github.io/adel-forge-kodi-repo/addons.xml
 
-### SENTINEL Sports
-- Best for: Sports enthusiasts
-- Add-ons: 4 sports-focused options
-- Storage: ~500MB
-- Setup time: 2 minutes
+MD5 Checksum
 
----
+https://akahwaj.github.io/adel-forge-kodi-repo/addons.xml.md5
 
-## 🔧 Maintenance Center
+⸻
 
-The SENTINEL Wizard includes:
+Kodi File Manager Source
 
-### 🧹 Cache Management
-- Clear Kodi cache
-- Clear thumbnails
-- Clear app data
-- Free up storage space
+Add this source in Kodi File Manager:
 
-### ♻️ Update & Refresh
-- Update all add-ons
-- Rebuild library
-- Refresh sources
-- Remove duplicate entries
+https://akahwaj.github.io/adel-forge-kodi-repo/
 
-### ⚙️ Configuration Guides
-- Step-by-step service setup
-- Authentication help
-- VPN configuration
-- Account linking
+Suggested source name:
 
-### 🆘 Troubleshooting
-- Test repository connections
-- Check add-on status
-- Fix common errors
-- View Kodi logs
-- Network diagnostics
+SENTINEL
 
----
+⸻
 
-## 🔗 Important URLs
+Installation Methods
 
-| Purpose | URL |
-|---------|-----|
-| **Repository Source** | `https://akahwaj.github.io/adel-forge-kodi-repo/` |
-| **GitHub Repo** | https://github.com/Akahwaj/adel-forge-kodi-repo |
-| **GitHub Pages** | https://akahwaj.github.io/adel-forge-kodi-repo/ |
-| **Releases** | https://github.com/Akahwaj/adel-forge-kodi-repo/releases |
-| **Actions** | https://github.com/Akahwaj/adel-forge-kodi-repo/actions |
+Method 1 — Downloader App
 
----
+1. Open Downloader
+2. Enter code:
 
-## 📚 Documentation
+5075635
 
-- **[COMPLETE_SETUP_GUIDE.md](COMPLETE_SETUP_GUIDE.md)** - Full deployment instructions
-- **[ADDON_MANIFEST.md](ADDON_MANIFEST.md)** - Detailed add-on documentation
-- **[LICENSE](LICENSE)** - GNU GPL-3.0
+3. Download the wizard ZIP
+4. Install from ZIP in Kodi
 
----
+⸻
 
-## ✨ Key Features
+Method 2 — Kodi File Manager
 
-✅ **Complete** - Everything ready to use  
-✅ **Automated** - GitHub Actions CI/CD  
-✅ **Professional** - Production-ready  
-✅ **Documented** - Comprehensive guides  
-✅ **Tested** - Built-in validation  
-✅ **Easy** - Wizard for all skill levels  
-✅ **Lightweight** - Only ~85KB total  
-✅ **Scalable** - Easy to update  
+1. Open Kodi
+2. Go to Settings
+3. File Manager
+4. Add Source
+5. Enter:
 
----
+https://akahwaj.github.io/adel-forge-kodi-repo/
 
-## 🎯 System Requirements
+6. Install repository ZIP
+7. Install wizard ZIP
 
-- **Kodi:** v21.0 or higher
-- **Device:** Any device running Kodi (Fire Stick, Shield, Android TV, etc.)
-- **Internet:** Stable connection for streaming
-- **Optional:** Debrid account for premium add-ons
+⸻
 
----
+Repository Structure
 
-## 📞 Support
+.github/workflows/
+plugin.sentinel.wizard/
+repository.sentinel.build/
+addons.xml
+addons.xml.md5
+repo.zip
+wizard.zip
+index.html
 
-- 📌 **Issues:** [GitHub Issues](https://github.com/Akahwaj/adel-forge-kodi-repo/issues)
-- 💬 **Discussions:** [GitHub Discussions](https://github.com/Akahwaj/adel-forge-kodi-repo/discussions)
-- 📖 **Docs:** See [COMPLETE_SETUP_GUIDE.md](COMPLETE_SETUP_GUIDE.md)
+⸻
 
----
+Automated GitHub Actions Workflow
 
-## 🎉 Ready to Get Started?
+The repository includes automated workflows for:
 
-1. Copy the repository URL above
-2. Add it in Kodi as shown in Quick Start
-3. Install the wizard
-4. Choose your profile
-5. Start streaming!
+* Kodi artifact publishing
+* GitHub Pages deployment
+* MD5 generation
+* Repository validation
+* Artifact alias generation
 
----
+Workflow file:
 
-**SENTINEL BUILD v1.1.0 - The Most Complete Kodi Setup**
+.github/workflows/kodi-publish.yml
 
-© 2026 Akahwaj | Licensed GNU GPL-3.0
+⸻
 
-🚀 **Deploy now. Stream immediately.**
+Included Artifacts
+
+Repository Package
+
+repository.sentinel.build-1.0.0.zip
+
+Wizard Package
+
+plugin.sentinel.wizard-1.0.0.zip
+
+Shortcut Aliases
+
+repo.zip
+wizard.zip
+
+⸻
+
+Validation & Testing
+
+Automated tests verify:
+
+* Required Kodi artifacts exist
+* addons.xml structure is valid
+* MD5 checksum correctness
+* Workflow commands are correct
+* GitHub Pages install endpoints exist
+
+Test command:
+
+pytest -q
+
+⸻
+
+GitHub Pages Deployment
+
+GitHub Pages is configured to deploy from:
+
+main branch / (root)
+
+Live site:
+
+https://akahwaj.github.io/adel-forge-kodi-repo/
+
+⸻
+
+Notes
+
+* .nojekyll is included to prevent GitHub Pages processing issues.
+* Root install artifacts are committed directly for immediate install availability.
+* GitHub Actions automatically updates generated artifacts after repository changes.
+
+⸻
+
+License
+
+MIT License
+
+⸻
+
+Maintainer
+
+Akahwaj / SENTINEL Build Project
